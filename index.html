@@ -11,13 +11,16 @@
 
 <body>
     <div id="app">
-        <img :class="gender" v-bind:src="picture" alt="">
-        <h1>{{firstName}} {{lastName}}</h1>
-        <h3><b>Email :</b> <i>{{email}}</i></h3>
-        <h3><b> Phone :</b> <i>{{phone}}</i> </h3>
-        <h3> <b>Country:</b> <i>{{country}},</i> <b>City:</b> <i>{{city}}</i> </h3>
-        <h3></h3>
-        <button @click='getUser()' :class="gender">Get Random User</button>
+        <div class="container">
+            <img :class="gender" v-bind:src="picture" alt="">
+            <h1>{{firstName}} {{lastName}}</h1>
+            <h3><b>Email :</b> <i>{{email}}</i></h3>
+            <h3><b> Phone :</b> <i>{{phone}}</i> </h3>
+            <h3> <b>Country:</b> <i>{{country}},</i> <b>City:</b> <i>{{city}}</i> </h3>
+            <h3></h3>
+            <button @click='getUser()' :class="gender">Get Random User</button>
+        </div>
+
     </div>
 
 
